@@ -1,0 +1,10 @@
+﻿CREATE DATABASE TodoListDB;
+USE TodoListDB;
+
+CREATE TABLE Todos (  
+    Id INT PRIMARY KEY IDENTITY(1,1),  
+    Title NVARCHAR(100) NOT NULL,  
+    Completed BIT NOT NULL DEFAULT 0  
+);  
+
+SELECT * from Todos;
