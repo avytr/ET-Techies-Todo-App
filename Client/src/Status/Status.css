@@ -1,0 +1,27 @@
+:root{
+    --aqua: #78defa;
+    --denim: #151e3d;
+    --aegean: #1c3249;
+    --lemon:  #f7fa78;
+}
+
+.stats-container{
+    margin-top: 10vh;
+    padding: 20px;
+    border: 2px solid var(--aqua);
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    width: 40%;
+    justify-content: space-between;
+}
+
+
+
+.details{
+    width: 100%;
+    margin-bottom: 10%;
+
+}
+
+

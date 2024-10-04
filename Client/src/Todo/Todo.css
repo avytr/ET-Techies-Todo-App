@@ -1,0 +1,110 @@
+:root{
+    --aqua: #78defa;
+    --secAqua:#5bb0c8;
+    --denim: #151e3d;
+    --aegean: #1c3249;
+    --lemon:  #f7fa78;
+    --darkerlemon: #a2a34f;
+}
+
+
+.todo-container{
+    gap: 10px;
+    margin-top: 60px;
+    width: calc(40% + 40px);
+    display: flex;
+    flex-direction: column;
+}
+
+.action{
+    width: 100%;
+    display: flex;
+}
+
+
+.action input{
+    color: aliceblue;
+    font-size: 1vw;
+    margin-right: 5%;
+    padding: 1vw;
+    width: 100%;
+    background-color: var(--aegean);
+    border: 1px solid var(--lemon);
+    border-radius: 10px;
+}
+   
+.action button{
+    width: 14%;
+    height: 70px;
+    background-color: var(--lemon);
+    border-radius: 20%;
+    font-size: calc(12px + 1.5vw);
+    color: var(--aegean);
+    cursor: pointer;
+}
+
+.action button:hover {
+    background-color: var(--darkerlemon); 
+    transform: scale(1.05); 
+    transition: background-color 0.3s, transform 0.3s; 
+}
+
+.action button {
+    padding: 10px 20px; 
+}
+
+.todoList{
+    margin-top: 70px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.task{
+    background-color: var(--aegean);
+    padding: 2.5vw;
+    margin-bottom: 60px;
+    border: 1px solid var(--secAqua);
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3vw;
+}
+
+.task:hover {
+    background-color: rgba(255, 255, 255, 0.1); 
+    transition: background-color 0.3s;
+}
+
+.update{
+    font-size: 0.7vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2vw;
+    cursor: pointer;
+}
+
+.edit.selected, .delete.selected, .completed.selected{
+    color: var(--lemon);
+}
+
+.detail.done{
+    text-decoration: line-through;
+    color:rgb(164, 182, 182);
+}
+
+.edit-element-input {
+    color: aliceblue; 
+    font-size: 1vw; 
+    padding: 1vw; 
+    width: 60%; 
+    background-color: var(--aegean);
+    border: 1px solid var(--aqua); 
+    border-radius: 10px; 
+    transition: border-color 0.3s; 
+}
+
+.edit-element-input:focus {
+    outline: none; 
+    border-color: var(--lemon); 
+    box-shadow: 0 0 5px rgba(255, 204, 0, 0.5);
+}
